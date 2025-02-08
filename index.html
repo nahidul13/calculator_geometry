@@ -45,7 +45,7 @@
                             <span>cm</span>
                         </div>
                         <div class="card-actions w-full">
-                            <button onclick="triangleCalculate()" class="btn btn-primary w-full">Buy Now</button>
+                            <button onclick="triangleCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -68,74 +68,107 @@
                             <span>cm</span>
                         </div>
                         <div class="card-actions w-full ">
-                            <button onclick="rectangleCalculate()" class="btn btn-primary  w-full">Buy Now</button>
+                            <button onclick="rectangleCalculate()" class="btn btn-primary  w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3.Parallelogram  -->
+                <!-- 3.parallelogram  -->
                 <div class="card  bg-white pt-6   shadow-xl">
                     <figure class="p-4">
                         <img src="images/parallelogram.png" alt="Shoes" />
                     </figure>
-                    <div class="card-body items-center">
-                        <h2 class="card-title font-bold text-black">Rectangle</h2>
-                        <p class="text-gray-600">Area(A)=w x l</p>
-                        <!-- input field  -->
+                    <div class="card-body justify-center items-center ">
+                        <h2 class="card-title  font-bold text-black text-center ">Parallelogram</h2>
+                        <p class="text-gray-600">Area(A)= b x h</p>
                         <div class="gap-x-3 mb-3 mt-3">
-                            <input id="rectangleWidth" class="bg-slate-200  w-24 h-8 p-3 text-black " type="text"
-                                placeholder="w">
+                            <!-- width input  -->
+                            <input id="parallelogramWidth" class="bg-slate-200 w-24 h-8 p-3 text-black" type="text"
+                                placeholder="b">
                             <span>cm</span>
-                            <input id="rectangleLenght" class="bg-slate-200  w-24 h-8 p-3 text-black " type="text"
-                                placeholder="l">
+                            <!-- height  -->
+                            <input id="parallelogramHeight" class="bg-slate-200 w-24 h-8 p-3 text-black" type=" text"
+                                placeholder="h">
                             <span>cm</span>
                         </div>
-                        <div class="card-actions w-full ">
-                            <button class="btn btn-primary  w-full">Buy Now</button>
+                        <div class="card-actions w-full">
+                            <button onclick="parallelogramCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4.Rhombus  -->
+                <!-- 4.rhombus  -->
                 <div class="card  bg-white pt-6   shadow-xl">
                     <figure>
                         <img src="images/rhombus.png" alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                    <div class="card-body justify-center items-center ">
+                        <h2 class="card-title  font-bold text-black text-center ">Rhombus</h2>
+                        <p class="text-gray-600">Area(A)= 0.5 x d <sub>1</sub> x d <sub>2</sub></p>
+                        <div class="gap-x-3 mb-3 mt-3">
+                            <!-- width input  -->
+                            <input id="rhombusd1" class="bg-slate-200 w-24 h-8 p-3 text-black" type="text"
+                                placeholder="b">
+                            <span>cm</span>
+                            <!-- height  -->
+                            <input id="rhombusd2" class="bg-slate-200 w-24 h-8 p-3 text-black" type=" text"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick="rhombusCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5.Pentagon  -->
+                <!-- 5.pentagon  -->
                 <div class="card  bg-white pt-6  shadow-xl">
                     <figure>
                         <img src="images/pentagon.png" alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                    <div class="card-body justify-center items-center ">
+                        <h2 class="card-title  font-bold text-black text-center ">Pentagon</h2>
+                        <p class="text-gray-600">Area(A)= 0.5 x p x b</p>
+                        <div class="gap-x-3 mb-3 mt-3">
+                            <!-- width input  -->
+                            <input id="pentagonb" class="bg-slate-200 w-24 h-8 p-3 text-black" type="text"
+                                placeholder="b">
+                            <span>cm</span>
+                            <!-- height  -->
+                            <input id="pentagonh" class="bg-slate-200 w-24 h-8 p-3 text-black" type=" text"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick=" pentagonCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
+
                 </div>
 
-                <!-- 6.Ellipse  -->
+                <!-- 6.ellipse  -->
                 <div class="card  bg-white pt-6   shadow-xl">
                     <figure>
                         <img src="images/ellipse.png" alt="Shoes" />
                     </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                    <div class="card-body justify-center items-center ">
+                        <h2 class="card-title  font-bold text-black text-center ">Ellipse</h2>
+                        <p class="text-gray-600">Area(A)= PI*ab</p>
+                        <div class="gap-x-3 mb-3 mt-3">
+                            <!-- width input  -->
+                            <input id="ellipseA" class="bg-slate-200 w-24 h-8 p-3 text-black" type="text"
+                                placeholder="b">
+                            <span>cm</span>
+                            <!-- height  -->
+                            <input id="ellipseB" class="bg-slate-200 w-24 h-8 p-3 text-black" type=" text"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick=" ellipseCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
+
                 </div>
 
             </div>
